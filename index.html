@@ -1,12 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Flights</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
+  <section class="form">
+    <div class="form__top">
+      <h2 class="form__title">Flights - Search List</h2>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <span>/</span>
+        <a href="#">Flights Search List</a>
+      </nav>
+    </div>
+    <div class="form__content">
+      <div class="radio__box">
+        <input  type="radio" id="one-way" name="choice" checked>
+        <label class="radio__item" for="one-way">One Way</label>
+
+        <input type="radio" id="round-trip" name="choice">
+        <label for="round-trip">Round Trip</label>
+      </div>
+      <div class="search__box">
+        <input class="input input__map" type="text" placeholder="From">
+        <input class="input input__map" type="text" placeholder="To">
+        <input class="input input__date" type="text" placeholder="Depart Date">
+        <input class="input input__date" type="text" placeholder="Return Date">
+        <select class="select" name="select" id="">
+          <option value="economy_class">Economy Class</option>
+          <option value="business__class">Businnes Class</option>
+        </select>
+        <button class="input btn">Search</button>
+      </div>
+
+      <div class="box">
+        <div class="box__filter">
+          <h4 class="filter__title">Filter</h4>
+          <p class="filter__text">No. of Stops</p>
+          <div class="checkbox__filter">
+            <input type="checkbox" name="stopnon" id="filter1">
+            <label for="filter1">Non Stop</label> <br>
+            <input type="checkbox" name="stops1" id="filter2">
+            <label for="filter2">1 Stop</label> <br>
+            <input type="checkbox" name="stops2+" id="filter3">
+            <label for="filter3">2+ Stops</label>
+          </div>
+          <p class="filter__text">Price</p>
+
+          <div class="price__box">
+            <span>Min:</span> <span>Max:</span> <br>
+            <input class="price__input" placeholder="0"></input>
+            <span>$ -</span>
+           
+            <input class="price__input" placeholder="1000"></input>
+            <span>$</span>
+          </div>
+
+          <p class="filter__text">Airlines</p>
+
+          <div class="checkbox__airlines">
+            <div class="ch">
+            <input type="checkbox" id="Asiana" name="">
+            <label for="Asiana">Asiana Airlines</label> <br>
+              </div>
+              <div class="ch">
+            <input type="checkbox" id="" name="">
+            <label for="">American Airlines</label> <br>
+          </div>
+          <div class="ch">
+            <input type="checkbox" id="" name="">
+            <label for="">Air Canada</label> <br>
+            </div>
+            <div class="ch">
+            <input type="checkbox" id="" name="">
+            <label for="">Air India</label> <br>
+              </div>
+              <div class="ch">
+            <input type="checkbox" id="" name="">
+            <label for="">Jet AirWays</label> <br>
+                </div>
+                <div class="ch">
+            <input type="checkbox" id="" name="">
+            <label for="">SpiceJet</label> <br>
+                  </div>
+                  <div class="ch">
+            <input type="checkbox" id="" name="">
+            <label for="">IndoGo</label> <br>
+            </div>
+            <div class="ch">
+            <input type="checkbox" id="" name="">
+            <label for="">Miltiple Airlines</label>
+            </div>
+          </div>
+        </div>
+        <div class="box__price">
+          <h3 class="title__price">Dehli to Sydney</h3>
+          <div class="price_row">
+            <p>Airlines</p>
+            <p>Departure</p>
+            <p>Duration</p>
+            <p>Arrival</p>
+            <p>Price</p>
+          </div>
+
+          <div class="price__items">
+            <div class="price__item">
+             <div> <p>IndoGO</p><p class="pr_item">6E-2854</p></div>
+              <div><p>23:30</p><p class="pr_item">Dehli</p></div>
+              <div><p>18h 55m</p><p class="pr_item">Non Stop</p></div>
+              <div><p>18:15</p><p class="pr_item">Sydney</p></div>
+              <p>$980</p>
+            <div>
+              <button class="btn__price">Book</button>
+              <p class="price__subtitle">Flight Details</p>
+            </div>
+            </div>
+            
+            <div class="price__item">
+              <div>
+                <p>IndoGO</p>
+                <p class="pr_item">6E-2854</p>
+              </div>
+              <div>
+                <p>23:30</p>
+                <p class="pr_item">Dehli</p>
+              </div>
+              <div>
+                <p>18h 55m</p>
+                <p class="pr_item">Non Stop</p>
+              </div>
+              <div>
+                <p>18:15</p>
+                <p class="pr_item">Sydney</p>
+              </div>
+              <p>$980</p>
+              <div>
+                <button class="btn__price">Book</button>
+                <p class="price__subtitle">Flight Details</p>
+              </div>
+            </div>
+            <div class="price__item">
+              <div>
+                <p>IndoGO</p>
+                <p class="pr_item">6E-2854</p>
+              </div>
+              <div>
+                <p>23:30</p>
+                <p class="pr_item">Dehli</p>
+              </div>
+              <div>
+                <p>18h 55m</p>
+                <p class="pr_item">Non Stop</p>
+              </div>
+              <div>
+                <p>18:15</p>
+                <p class="pr_item">Sydney</p>
+              </div>
+              <p>$980</p>
+              <div>
+                <button class="btn__price">Book</button>
+                <p>Flight Details</p>
+              </div>
+            </div>
+            <div class="price__item">
+              <div>
+                <p>IndoGO</p>
+                <p class="pr_item">6E-2854</p>
+              </div>
+              <div>
+                <p>23:30</p>
+                <p class="pr_item">Dehli</p>
+              </div>
+              <div>
+                <p>18h 55m</p>
+                <p class="pr_item">Non Stop</p>
+              </div>
+              <div>
+                <p>18:15</p>
+                <p class="pr_item">Sydney</p>
+              </div>
+              <p>$980</p>
+              <div>
+                <button class="btn__price">Book</button>
+                <p class="price__subtitle">Flight Details</p>
+              </div>
+            </div>
+            <div class="price__item">
+              <div>
+                <p>IndoGO</p>
+                <p class="pr_item">6E-2854</p>
+              </div>
+              <div>
+                <p>23:30</p>
+                <p class="pr_item">Dehli</p>
+              </div>
+              <div>
+                <p>18h 55m</p>
+                <p class="pr_item">Non Stop</p>
+              </div>
+              <div>
+                <p>18:15</p>
+                <p class="pr_item">Sydney</p>
+              </div>
+              <p>$980</p>
+              <div>
+                <button class="btn__price">Book</button>
+                <p class="price__subtitle">Flight Details</p>
+              </div>
+            </div>
+            <div class="price__item">
+              <div>
+                <p>IndoGO</p>
+                <p class="pr_item">6E-2854</p>
+              </div>
+              <div>
+                <p>23:30</p>
+                <p class="pr_item">Dehli</p>
+              </div>
+              <div>
+                <p>18h 55m</p>
+                <p class="pr_item">Non Stop</p>
+              </div>
+              <div>
+                <p>18:15</p>
+                <p class="pr_item">Sydney</p>
+              </div>
+              <p>$980</p>
+              <div>
+                <button class="btn__price">Book</button>
+                <p class="price__subtitle">Flight Details</p>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 </body>
+
 </html>
